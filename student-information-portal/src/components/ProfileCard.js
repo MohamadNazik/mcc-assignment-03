@@ -25,7 +25,6 @@ function ProfileCard(props){
             <tr>
                 <td>Skills: {props.student.skills + ""}</td>
             </tr>
-            
         </table>
     </div>
 }
