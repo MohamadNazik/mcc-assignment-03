@@ -1,9 +1,9 @@
 import React from 'react'
 
-function studentTable(){
+function ProfileCard(){
     return <div>
         
     </div>
 }
 
-export default studentTable;
+export default ProfileCard;
