@@ -25,3 +25,15 @@
 .profile{
     width: 75%;
 }
+
+#heading{
+  text-align: center;
+}
+
+.buttons-container{
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 2rem;
+}
