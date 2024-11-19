@@ -1,6 +1,6 @@
 import React from 'react'
 
-function StudentTable({students}){
+function StudentTable(props){
     return <table border={1}>
         <tr>
             <th>First Name</th>
@@ -9,13 +9,13 @@ function StudentTable({students}){
             <th>Country</th>
             <th>Profile</th>
         </tr>
-        {students.map((student)=>(
+        {props.students.map((student)=>(
             <tr key={student.studentId}>
                 <td>{student.firstName}</td>
                 <td>{student.lastName}</td>
                 <td>{student.course}</td>
                 <td>{student.address.country}</td>
-                <td><button>View</button></td>
+                <td><button onClick={()=>props.setStudent(student)}>View</button></td>
             </tr>
             )
         )}
